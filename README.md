@@ -1,7 +1,9 @@
 # AnchoredBehavior
-[![Travis branch](https://img.shields.io/travis/prolificinteractive/patrons/master.svg)](https://travis-ci.org/prolificinteractive/patrons) [![](https://jitpack.io/v/prolificinteractive/patrons.svg)](https://jitpack.io/#prolificinteractive/patrons)
+[![Travis branch](https://img.shields.io/travis/prolificinteractive/anchored-behavior/master.svg)](https://travis-ci.org/prolificinteractive/anchored-behavior) [![](https://jitpack.io/v/prolificinteractive/anchored-behavior.svg)](https://jitpack.io/#prolificinteractive/anchored-behavior)
 
-TODO: Description
+![Demo Screen Capture 1](/arts/demo1.gif) | ![Demo Screen Capture 2](/arts/demo2.gif) 
+:---:|:---:
+Default Behavior | Custom Behavior
 
 ## Installation
 
@@ -26,7 +28,7 @@ dependencies {
 
 ## Usage
 
-
+Look for the sample app for a complete example of AnchoredBehavior.
 
 ## Contributing to AnchoredBehavior
 
