@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:theme="@style/AppTheme.AppBarOverlay"
+      >
+
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleGravity="bottom"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        app:title="Anchored Behavior"
+        >
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          app:layout_collapseMode="pin"
+          app:popupTheme="@style/AppTheme.PopupOverlay"
+          app:title="Anchored Behavior"
+          />
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <android.support.v4.widget.NestedScrollView
+      android:id="@+id/nested_scroll_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/colorPrimaryDark"
+          android:padding="16dp"
+          android:text="Anchored Behavior Examples"
+          android:textColor="@android:color/white"
+          android:textStyle="bold"
+          />
+
+      <include
+          layout="@layout/item_standard"
+          android:id="@+id/cell1"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/spacing_line"
+          android:layout_marginEnd="@dimen/spacing_large"
+          android:layout_marginStart="@dimen/spacing_large"
+          android:background="@color/color_grey_4"
+          />
+
+      <include
+          layout="@layout/item_rounded_button"
+          android:id="@+id/cell2"
+          />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/spacing_line"
+          android:layout_marginEnd="@dimen/spacing_large"
+          android:layout_marginStart="@dimen/spacing_large"
+          android:background="@color/color_grey_4"
+          />
+
+      <include
+          layout="@layout/item_parameters_button"
+          android:id="@+id/cell3"
+          />
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/spacing_line"
+          android:layout_marginEnd="@dimen/spacing_large"
+          android:layout_marginStart="@dimen/spacing_large"
+          android:background="@color/color_grey_4"
+          />
+
+
+      <Button
+          android:id="@+id/invisible_button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/spacing_standard"
+          android:layout_marginEnd="100dp"
+          android:layout_marginStart="100dp"
+          android:layout_marginTop="@dimen/spacing_xxxlarge"
+          android:visibility="invisible"
+          />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:background="@drawable/bg_gradient"
+          />
+    </LinearLayout>
+
+
+  </android.support.v4.widget.NestedScrollView>
+
+  <FrameLayout
+      android:id="@+id/button1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="invisible"
+      app:layout_anchor="@id/invisible_button"
+      app:layout_anchorGravity="center"
+      >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_standard"
+        android:padding="4dp"
+        android:text="@string/text_anchored_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+  </FrameLayout>
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:padding="4dp"
+      android:text="@string/text_anchored_button"
+      android:visibility="invisible"
+      app:layout_anchor="@id/invisible_button"
+      app:layout_anchorGravity="center"
+      style="@style/Widget.AppCompat.Button.Colored"
+      />
+
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:padding="4dp"
+      android:text="@string/text_anchored_button"
+      android:visibility="invisible"
+      app:layout_anchor="@id/invisible_button"
+      app:layout_anchorGravity="center"
+      style="@style/Widget.AppCompat.Button.Colored"
+      />
+
+</android.support.design.widget.CoordinatorLayout>

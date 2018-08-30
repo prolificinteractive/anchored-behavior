@@ -1,0 +1,28 @@
+<resources>
+  <string name="app_name">Anchored Behavior</string>
+
+  <string name="text_anchored_button">I\'m Anchored</string>
+
+  <string name="title_standard">Standard</string>
+  <string name="text_standard">Default example with a button embedded in a FrameLayout to allow for padding.</string>
+
+  <string name="title_rounded_button">Custom Behavior</string>
+  <string name="text_rounded_button">A button that starts Full Screen and then round its corner once animated.</string>
+
+  <string name="title_parameters_button">Parameters Behavior</string>
+  <string name="text_parameters_button">A button with different interpolators and animation height. Click to choose your interpolator.</string>
+
+  <string name="_1">1</string>
+  <string name="_2">2</string>
+  <string name="_3">3</string>
+  <string name="_4">4</string>
+  <string name="_5">5</string>
+  <string name="_6">6</string>
+
+  <string name="decelerate">Decelerate</string>
+  <string name="accelerate">Accelerate</string>
+  <string name="overshoot">Overshoot</string>
+  <string name="linear">Linear</string>
+  <string name="fast_in_slow_out">Fast In Slow Out</string>
+  <string name="bounce">Bounce</string>
+</resources>

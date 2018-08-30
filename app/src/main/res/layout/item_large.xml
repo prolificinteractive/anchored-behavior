@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    >
+  <android.support.constraint.Guideline
+      android:id="@+id/start"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="16dp"
+      />
+  <android.support.constraint.Guideline
+      android:id="@+id/top"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="16dp"
+      />
+  <android.support.constraint.Guideline
+      android:id="@+id/bottom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_end="16dp"
+      />
+  <android.support.constraint.Guideline
+      android:id="@+id/end"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_end="16dp"
+      />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="@+id/bottom"
+      app:layout_constraintStart_toStartOf="@+id/start"
+      app:layout_constraintTop_toTopOf="@+id/top"
+      app:srcCompat="@mipmap/ic_launcher_round"
+      />
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:text="Title"
+      app:layout_constraintStart_toEndOf="@+id/imageView"
+      app:layout_constraintTop_toBottomOf="@+id/top"
+      style="@style/TextAppearance.AppCompat.Headline"
+      />
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="2dp"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:text="It's a cool cool cell with tons of information in it."
+      app:layout_constraintBottom_toTopOf="@+id/bottom"
+      app:layout_constraintEnd_toStartOf="@+id/end"
+      app:layout_constraintStart_toStartOf="@+id/textView"
+      app:layout_constraintTop_toBottomOf="@+id/textView"
+      style="@style/TextAppearance.AppCompat.Caption"
+      />
+
+
+</android.support.constraint.ConstraintLayout>

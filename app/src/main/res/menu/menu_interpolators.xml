@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/decelerate"
+      android:title="@string/decelerate"
+      />
+  <item
+      android:id="@+id/accelerate"
+      android:title="@string/accelerate"
+      />
+  <item
+      android:id="@+id/overshoot"
+      android:title="@string/overshoot"
+      />
+  <item
+      android:id="@+id/linear"
+      android:title="@string/linear"
+      />
+  <item
+      android:id="@+id/fast_in_slow_out"
+      android:title="@string/fast_in_slow_out"
+      />
+  <item
+      android:id="@+id/bounce"
+      android:title="@string/bounce"
+      />
+</menu>

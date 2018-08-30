@@ -1,0 +1,9 @@
+<resources>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="spacing_line">1dp</dimen>
+  <dimen name="spacing_standard">16dp</dimen>
+  <dimen name="spacing_large">24dp</dimen>
+  <dimen name="spacing_xxxlarge">100dp</dimen>
+  <dimen name="size_numero">64dp</dimen>
+  <dimen name="animation_height">300dp</dimen>
+</resources>
